@@ -1,0 +1,24 @@
+{
+  "name": "gingham",
+  "version": "1.0.0",
+  "description": "Pattern library for AEM development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mnlsn/gingham.git"
+  },
+  "keywords": [
+    "AEM",
+    "Pattern",
+    "DPL"
+  ],
+  "author": "Mike Nelson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mnlsn/gingham/issues"
+  },
+  "homepage": "https://github.com/mnlsn/gingham#readme"
+}
