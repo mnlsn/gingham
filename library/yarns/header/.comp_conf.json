@@ -1,0 +1,7 @@
+{
+  "name": "Header",
+  "include": true,
+  "use": "com.fake.location.header",
+  "compiler": "react",
+  "styles": "scss"
+}

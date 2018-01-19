@@ -1,0 +1,23 @@
+{
+    "name": "Button",
+    "include": true,
+    "use": false,
+    "compiler": "hbs",
+    "styles": "less",
+    "variants": [
+      {
+        "name": "Button - Primary",
+        "props": {
+          "class": "btn-primary",
+          "text": "Submit"
+        }
+      },
+      {
+        "name": "Button - Secondary",
+        "props": {
+          "classes": "btn-secondary",
+          "text": "Cancel"
+        }
+      }
+    ]
+}

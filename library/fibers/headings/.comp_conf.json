@@ -1,0 +1,7 @@
+{
+    "name": "Headings",
+    "include": true,
+    "use": false,
+    "compiler": "react",
+    "styles": "css"
+}
