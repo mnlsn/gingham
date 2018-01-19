@@ -12,7 +12,7 @@ let sortedDir = {
     yarns: {}
 };
 
-const promisedReadFile = (path) => {
+const readHandlebarsFile = (path) => {
     return new Promise((resolve, reject) => {
         readFile(join(__dirname, path), 'utf8', (err, data) => {
             if (err) {
@@ -22,10 +22,6 @@ const promisedReadFile = (path) => {
             resolve(data);
         });
     }).catch((err) => console.error('Read File: ', err, join(__dirname, path)));
-}
-
-async function readHandlebarsFile(file) {
-    return await promisedReadFile(file);
 }
 
 const r = (path) => {
