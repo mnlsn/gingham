@@ -8,7 +8,7 @@
       {
         "name": "Button - Primary",
         "props": {
-          "class": "btn-primary",
+          "classes": "btn-primary",
           "text": "Submit"
         }
       },
