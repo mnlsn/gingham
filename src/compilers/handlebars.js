@@ -2,14 +2,16 @@ import Handlebars from 'handlebars';
 
 function checkVariants(component) {
     if (component.variants.length) {
+        let variants = [];
         for (let i = 0; i < component.variants.length; i++) {
             const variant = component.variants[i];
             const template = Handlebars.compile(component.retrievedTemplate);
 
             const compiledVariant = template(variant.props);
-            console.log(compiledVariant);
-
+            variants.push({...variant, template: compiledVariant});
         }
+
+        return { ...component, variants }
     }
 
     return component;
@@ -36,9 +38,10 @@ function compile(templates = []) {
         for (let i = 0; i < components.length; i++) {
             const component = components[i];
 
-            console.log(component);
-            checkVariants(component);
+            templateArray.push(checkVariants(component));
         }
+
+        return templateArray;
     });
 }
 

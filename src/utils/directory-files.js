@@ -79,7 +79,7 @@ function sortFiles(list) {
 
     return {
         all: componentDir,
-        byRenderer: sortedDir
+        type: sortedDir
     };
 }
 
@@ -97,7 +97,7 @@ const get = (name) => {
     if (!name) {
         return {
             all: componentDir,
-            byRenderer: sortedDir
+            type: sortedDir
         };
     } else if (name === 'all') {
         return componentDir;

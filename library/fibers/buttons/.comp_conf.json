@@ -4,6 +4,7 @@
     "use": false,
     "compiler": "hbs",
     "styles": "less",
+    "managed": false,
     "variants": [
       {
         "name": "Button - Primary",
